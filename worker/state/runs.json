@@ -27,6 +27,25 @@
       "message": "Published live NFL snapshot; 942 players.",
       "attempts": 1,
       "retryAfter": null
+    },
+    "revision-2026-09-25": {
+      "status": "live",
+      "executedAt": "2026-10-02T16:49:52.712402Z",
+      "message": "Published live NFL snapshot; 943 players.",
+      "attempts": 1,
+      "retryAfter": null
+    },
+    "catchup-check-2026-09-26": {
+      "status": "unchanged",
+      "executedAt": "2026-10-02T16:49:52.712402Z",
+      "message": "Upstream sources unchanged; no revision published."
+    },
+    "weekly-2026-09-29": {
+      "status": "live",
+      "executedAt": "2026-10-02T16:49:52.712402Z",
+      "message": "Published live NFL snapshot; 943 players.",
+      "attempts": 1,
+      "retryAfter": null
     }
   }
 }
