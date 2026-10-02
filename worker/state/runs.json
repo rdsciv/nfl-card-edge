@@ -46,6 +46,13 @@
       "message": "Published live NFL snapshot; 943 players.",
       "attempts": 1,
       "retryAfter": null
+    },
+    "revision-2026-10-02": {
+      "status": "live",
+      "executedAt": "2026-10-02T21:26:36.535305Z",
+      "message": "Published live NFL snapshot; 943 players.",
+      "attempts": 1,
+      "retryAfter": null
     }
   }
 }
