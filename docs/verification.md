@@ -24,4 +24,4 @@ The synthetic cost fixture uses an acquisition/submission cost of $150, success 
 - Routes, play-by-play/red-zone measures, liquidity forecasts, automatic card matching, and certified physical authentication: unavailable and not silently substituted.
 - GitHub Pages hosts static files; PostgreSQL, a login server, and an always-on Python service are not provisioned by this architecture. GitHub Actions supplies the scheduled cloud execution.
 
-Local checks do not establish that GitHub deployment succeeded. The public URL and cloud run must be checked separately after publication.
+Cloud verification: the [GitHub Actions run](https://github.com/rdsciv/nfl-card-edge/actions/runs/36999249181) completed with successful refresh, build, and deploy jobs. The public [NFL Card Edge URL](https://rdsciv.github.io/nfl-card-edge/) returned HTTP 200 over HTTPS. GitHub generated and committed a new public snapshot and immutable report, proving that the deployed cloud runner can ingest and publish independently of the local preview.

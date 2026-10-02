@@ -9,6 +9,6 @@ Private CSV imports, portfolio records, and investor settings remain in browser 
 - [x] Build the responsive Opportunities, player research, Card Lab, Watchlist, Reports, and Settings views with accessible controls.
 - [x] Verify primary card/grading/provider evidence and document known gaps.
 - [ ] Run type checking, domain tests, worker tests, production build, and browser workflow checks.
-- [ ] Create the public repository, enable Pages, run the cloud workflow, and verify the public URL.
+- [x] Create the public repository, enable Pages, run the cloud workflow, and verify the public URL.
 
 Acceptance: the public dashboard loads over HTTPS; the repository contains source and a real schedule; imported data previews and validates; unsupported data is visible; private records are not published; the deployed build and cloud refresh complete successfully.
