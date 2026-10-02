@@ -4,7 +4,7 @@
   "week": 3,
   "completedWeek": 3,
   "partialWeek": true,
-  "updatedAt": "2026-10-02T10:47:38.359161Z",
+  "updatedAt": "2026-10-02T11:07:23.129486Z",
   "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
   "coverage": {
     "players": 942,
@@ -73156,6 +73156,76 @@
   ],
   "reports": [
     {
+      "id": "manual-2026-10-02T1107-e26df00563d7",
+      "date": "2026-10-02T11:07:23.129486Z",
+      "scheduledFor": "2026-10-02T11:07:23.129486Z",
+      "kind": "manual",
+      "season": 2026,
+      "week": 3,
+      "status": "live",
+      "playerCount": 942,
+      "leaders": [
+        {
+          "id": "00-0039890",
+          "name": "Adonai Mitchell",
+          "score": 100.0
+        },
+        {
+          "id": "00-0034827",
+          "name": "DJ Moore",
+          "score": 100.0
+        },
+        {
+          "id": "00-0034960",
+          "name": "Jakobi Meyers",
+          "score": 100.0
+        },
+        {
+          "id": "00-0032268",
+          "name": "Marcus Mariota",
+          "score": 98.0
+        },
+        {
+          "id": "00-0037238",
+          "name": "Drake London",
+          "score": 97.7
+        },
+        {
+          "id": "00-0038994",
+          "name": "Jordan Addison",
+          "score": 97.0
+        },
+        {
+          "id": "00-0039067",
+          "name": "Rashee Rice",
+          "score": 95.4
+        },
+        {
+          "id": "00-0038117",
+          "name": "Wan'Dale Robinson",
+          "score": 95.4
+        },
+        {
+          "id": "00-0033110",
+          "name": "Tyler Higbee",
+          "score": 94.4
+        },
+        {
+          "id": "00-0033555",
+          "name": "Mack Hollins",
+          "score": 93.8
+        }
+      ],
+      "sources": [
+        "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+        "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv.gz"
+      ]
+    },
+    {
       "id": "manual-2026-10-02T1047-72438e666c06",
       "date": "2026-10-02T10:47:38.359161Z",
       "scheduledFor": "2026-10-02T10:47:38.359161Z",
@@ -73368,6 +73438,13 @@
   ],
   "jobs": [
     {
+      "id": "manual-2026-10-02T1107",
+      "date": "2026-10-02T11:07:23.129486Z",
+      "scheduledFor": "2026-10-02T11:07:23.129486Z",
+      "status": "live",
+      "message": "Published live NFL snapshot; 942 players."
+    },
+    {
       "id": "manual-2026-10-02T1047",
       "date": "2026-10-02T10:47:38.359161Z",
       "scheduledFor": "2026-10-02T10:47:38.359161Z",
@@ -73394,7 +73471,7 @@
       "id": "nfl-schedule",
       "status": "live",
       "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-      "retrievedAt": "2026-10-02T10:47:38.359161Z",
+      "retrievedAt": "2026-10-02T11:07:23.129486Z",
       "etag": "\"446022aeec82eea0d14a8a9fe0154074d41f7b49e34e8f7849fb0b58a0074112\"",
       "lastModified": null,
       "rows": 7548,
@@ -73404,7 +73481,7 @@
       "id": "nfl-weekly-stats",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz",
-      "retrievedAt": "2026-10-02T10:47:38.359161Z",
+      "retrievedAt": "2026-10-02T11:07:23.129486Z",
       "etag": "\"0x8DF20643C0967DA\"",
       "lastModified": "Fri, 02 Oct 2026 09:04:58 GMT",
       "rows": 3407,
@@ -73414,7 +73491,7 @@
       "id": "rosters",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv.gz",
-      "retrievedAt": "2026-10-02T10:47:38.359161Z",
+      "retrievedAt": "2026-10-02T11:07:23.129486Z",
       "etag": "\"0x8DF204AD1FB054C\"",
       "lastModified": "Fri, 02 Oct 2026 06:03:03 GMT",
       "rows": 3018,
@@ -73424,17 +73501,17 @@
       "id": "snap_counts",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv.gz",
-      "retrievedAt": "2026-10-02T10:47:38.359161Z",
-      "etag": "\"0x8DF1E1901F0F0A6\"",
-      "lastModified": "Tue, 29 Sep 2026 11:01:26 GMT",
-      "rows": 4488,
-      "hash": "c5868527b1052ae572b2d8f34a7bb777675a5e762ceaeb25f72f10d1c59846d5"
+      "retrievedAt": "2026-10-02T11:07:23.129486Z",
+      "etag": "\"0x8DF20748FA6A7C2\"",
+      "lastModified": "Fri, 02 Oct 2026 11:01:50 GMT",
+      "rows": 4579,
+      "hash": "67905be7dc1981c6630e3e977996137e36b6566a93ce8ce78e69c40cfd13c7ff"
     },
     {
       "id": "injuries",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
-      "retrievedAt": "2026-10-02T10:47:38.359161Z",
+      "retrievedAt": "2026-10-02T11:07:23.129486Z",
       "etag": "\"0x8DF204A995EF400\"",
       "lastModified": "Fri, 02 Oct 2026 06:01:28 GMT",
       "rows": 1025,
@@ -73446,7 +73523,7 @@
       "id": "depth_charts",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv.gz",
-      "retrievedAt": "2026-10-02T10:47:38.359161Z",
+      "retrievedAt": "2026-10-02T11:07:23.129486Z",
       "etag": "\"0x8DF204ABACEE204\"",
       "lastModified": "Fri, 02 Oct 2026 06:02:24 GMT",
       "rows": 592512,
@@ -73463,10 +73540,10 @@
   },
   "methodology": {
     "baseline": "Latest completed player game versus prior three available completed games.",
-    "targetShare": "Targets divided by all team's recorded player targets in the same game after player/game deduplication; prior and season shares use summed numerators and denominators. Any missing offensive-player target count makes that team/game denominator and shares unknown.",
+    "targetShare": "Targets divided by all team's recorded player targets in the same game after player/game deduplication; prior and season shares use summed numerators and denominators. Any missing player target count makes that team/game denominator and shares unknown.",
     "score": "50 + 50 \u00d7 weighted normalized usage change, clipped to 0\u2013100. WR/TE targets 55% (scale 6) and target share 45% (scale .20); RB carries 65% (scale 10), targets 35% (scale 5); QB attempts 80% (scale 15), carries 20% (scale 5). Each component change is clipped to \u00b11. Missing components are omitted and weights renormalized. No prior games means neutral 50. This is a transparent usage heuristic, not a calibrated investment forecast.",
     "catalysts": "No injury/depth catalyst is inferred automatically. Optional provider health is shown separately."
   },
-  "watermark": "72438e666c066cc81bda00463bf5cffed632809dea9d0788e57adee8a518fbaa",
-  "lastAttemptAt": "2026-10-02T10:47:38.359161Z"
+  "watermark": "e26df00563d7a401dff291fa5bd2e090000dc73e1353067d29713b42db36ac45",
+  "lastAttemptAt": "2026-10-02T11:07:23.129486Z"
 }
