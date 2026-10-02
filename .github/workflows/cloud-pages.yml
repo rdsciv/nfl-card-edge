@@ -1,0 +1,96 @@
+name: Cloud data and GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '15 9 * * 2'
+      timezone: America/Chicago
+    - cron: '15 16 * * 5'
+      timezone: America/Chicago
+    # Bounded, timezone-aware dispatcher catches delayed/missed runs and Saturday corrections.
+    - cron: '45 * * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nfl-card-edge-cloud-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.refresh.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Test ingestion and schedule
+        run: python -m unittest discover -s tests -p test_worker.py -v
+      - name: Refresh due cloud data
+        id: refresh
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            python -m worker.pipeline
+          else
+            python -m worker.pipeline --force
+          fi
+      - name: Commit durable public snapshots and due-run records
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/data worker/state/*.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh public NFL snapshots and cloud job state'
+            git push origin HEAD:main
+          fi
+
+  build:
+    needs: refresh
+    if: github.event_name != 'schedule' || needs.refresh.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Token-generated commits do not trigger another push workflow. Build latest main here.
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/configure-pages@v5
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: Build public static site
+        env:
+          BASE_PATH: /nfl-card-edge
+        run: npm run build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy public site
+        id: deployment
+        uses: actions/deploy-pages@v4

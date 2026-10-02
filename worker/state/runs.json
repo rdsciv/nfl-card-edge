@@ -1,0 +1,25 @@
+{
+  "runs": {
+    "manual-2026-10-02T1037": {
+      "status": "live",
+      "executedAt": "2026-10-02T10:37:50.092284Z",
+      "message": "Published live NFL snapshot; 942 players.",
+      "attempts": 1,
+      "retryAfter": null
+    },
+    "manual-2026-10-02T1041": {
+      "status": "live",
+      "executedAt": "2026-10-02T10:41:29.672847Z",
+      "message": "Published live NFL snapshot; 942 players.",
+      "attempts": 1,
+      "retryAfter": null
+    },
+    "manual-2026-10-02T1047": {
+      "status": "live",
+      "executedAt": "2026-10-02T10:47:38.359161Z",
+      "message": "Published live NFL snapshot; 942 players.",
+      "attempts": 1,
+      "retryAfter": null
+    }
+  }
+}
