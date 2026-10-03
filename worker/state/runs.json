@@ -53,6 +53,13 @@
       "message": "Published live NFL snapshot; 943 players.",
       "attempts": 1,
       "retryAfter": null
+    },
+    "catchup-check-2026-10-03": {
+      "status": "live",
+      "executedAt": "2026-10-03T16:43:48.204955Z",
+      "message": "Published live NFL snapshot; 943 players.",
+      "attempts": 1,
+      "retryAfter": null
     }
   }
 }
