@@ -3,15 +3,16 @@ import { useState } from 'react';
 import { CheckCircle2, Download, Github, Upload } from 'lucide-react';
 import { parseGemrateCsv, parseSoldCsv, type Population, type SoldSale } from '@/lib/market';
 import type { NFLData, Preferences } from '@/lib/types';
+import type { ListingSnapshot } from '@/lib/ebay';
 import { backupKeys, readBackup } from '@/lib/backup';
 import { date, Empty, exportPrivateBackup, Notice, percent, Source } from './shared';
 
 type Props = {
-  data: NFLData; populations: Population[]; setPopulations: (rows: Population[]) => void;
+  data: NFLData; listingSnapshot: ListingSnapshot; populations: Population[]; setPopulations: (rows: Population[]) => void;
   sales: SoldSale[]; setSales: (rows: SoldSale[]) => void;
   preferences: Preferences; setPreferences: (p: Preferences) => void;
 };
-export default function SettingsView({ data, populations, setPopulations, sales, setSales, preferences, setPreferences }: Props) {
+export default function SettingsView({ data, listingSnapshot, populations, setPopulations, sales, setSales, preferences, setPreferences }: Props) {
   const [kind, setKind] = useState('population');
   const [preview, setPreview] = useState<{ rows: Population[] | SoldSale[]; errors: string[] } | null>(null);
   const [message, setMessage] = useState('');
@@ -57,7 +58,8 @@ export default function SettingsView({ data, populations, setPopulations, sales,
       ['nflverse football', data.status, 'Published schedule, identities, weekly stats. See field coverage below.'],
       ['Sold card prices', sales.length ? 'Manual import' : 'Blocked', 'No authorized automatic sold feed. Browse is active listings only.'],
       ['PSA populations', populations.length ? 'Manual import' : 'Unconfigured', 'Official API exists; token entitlement and exact SpecID are untested.'],
-      ['Cert / active asks', 'Unconfigured', 'No authentication or API adapter connected. Manual verification required.'],
+      ['eBay active listings', listingSnapshot.listings.length ? 'Checked snapshot' : 'Search links available', `${listingSnapshot.listings.length} manually checked quotes. Last check: ${date(listingSnapshot.updatedAt)}. Automatic listing refresh is not configured; confirm current prices on eBay.`],
+      ['Slab certificates', 'Unconfigured', 'No authenticated certificate adapter connected. Manual verification required.'],
       ['Grading outcomes', 'Manual evidence', 'Separate physical cards, attempts, and methods. No grade conversion assumptions.'],
       ['Private cloud database', 'Unavailable on Pages', 'Private records are browser storage; no PostgreSQL service or cloud sync.'],
     ].map(([name, status, text]) => <div key={name}><h3>{name}</h3><span className={`pill ${status === 'live' ? 'green' : 'amber'}`}>{status}</span><p>{text}</p></div>)}</div><details className="details"><summary>Coverage and scoring methodology</summary><p>Rankings compare position-specific opportunity volume and weighted team target shares with prior available completed games. Missing route data is excluded. Touchdowns do not create the usage signal. The worker publishes component values and weights with the snapshot; neutral scores with no sample do not establish a role change.</p><pre>{JSON.stringify({ methodology: data.methodology, coverage: data.coverage, providers: data.providers }, null, 2)}</pre><Source url="https://github.com/rdsciv/nfl-card-edge/blob/main/worker/pipeline.py">Read exact scoring and missing-data rules</Source></details><div className="schedule-box"><b>America/Chicago</b><span>Next actual due run: {date(data.nextRun?.at)} · {data.nextRun?.kind || "unavailable"}</span><span>Tuesday 9:15 AM · weekly report</span><span>Friday 4:15 PM · correction revision</span><span>Saturday · delayed-data catch-up</span></div><details className="details"><summary>Actual cloud job records</summary>{data.jobs.length ? <pre>{JSON.stringify(data.jobs.slice(-10), null, 2)}</pre> : <Empty title="No stored job record" text="The first cloud execution will write its actual result." />}</details></section>

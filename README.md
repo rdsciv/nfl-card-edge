@@ -18,6 +18,16 @@ GitHub Pages serves the application over HTTPS. It provides no Python server, Po
 4. Use Card Lab to inspect slab photos, run local OCR, record paired crossover outcomes, and calculate explicit grading scenarios. Population gem rates never become raw-card PSA 10 probabilities automatically.
 5. Use Watchlist for your saved research and portfolio. In Settings & data, export a validated JSON backup before clearing browser storage; restore that file on another browser/device to transfer personal data.
 
+### Card prices and eBay shopping
+
+Every player research page has **Card prices & eBay listings** at the top. Choose a grade, then open **Search Buy It Now** (price plus shipping) or **Search auctions** (ending soonest). Cataloged cards include the year, set, parallel, and card number in the search. Other players use a clearly labeled rookie-card search; verify the exact issue and photos on eBay before bidding or buying.
+
+The initial checked snapshot contains two Buy It Now listings and one auction for Michael Wilson's 2023 Prizm Silver #303. Each quote shows its original currency, item price/current bid, quoted shipping, total before tax, seller, source link, and check time. Shipping depends on destination. These are manually checked public listing snapshots, not an automatic feed or a sold-price estimate. After 24 hours, quotes say **Quote needs refresh** and the action becomes **Check listing on eBay**. Known ended auctions are hidden. Confirm availability, end time, current prices, and taxes on eBay.
+
+The separate **Sold prices · past 30 days** guide uses only your imported USD exact-card sales, with grade-specific medians, sample counts, and ranges. Empty records show **No recent sold comps**. **Check sold listings on eBay** opens a search for evidence to review; unknown accepted offers are not imported as known sale amounts.
+
+`public/data/listings.json` is the public, dated snapshot. NFL cloud refreshes do not refresh these card quotes. Automatic Browse API updates require authorized production eBay credentials and an adapter; neither is configured. The public app never requests an API secret. Player links now preserve the selected player in the URL so a reload opens the same research page.
+
 ### Imports and provenance
 
 GemRate-style population CSVs support the banner plus second header row, UTF-8 BOM, quoted commas, and comma-formatted counts. Preserve the exact year, set, player, parallel, and card number. A rounded supplied gem rate does not replace the calculation from counts. A historical export without a snapshot date remains an undated import; a filename or recent certificate is not its capture date.
