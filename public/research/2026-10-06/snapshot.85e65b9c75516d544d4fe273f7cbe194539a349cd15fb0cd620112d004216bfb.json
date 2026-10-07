@@ -1,0 +1,1140 @@
+{
+  "surface": "report",
+  "title": "NFL Card Edge: where the price leaves room for profit",
+  "generatedAt": "2026-10-06T22:01:50.805774Z",
+  "status": "reviewed",
+  "buildStatus": "complete",
+  "filters": [],
+  "report": {
+    "asOf": "2026-10-06"
+  },
+  "queries": {
+    "usage": {
+      "rows": [
+        {
+          "player": "Michael Wilson",
+          "position": "WR",
+          "team": "ARI",
+          "targetsFirst": 7,
+          "targetsLast": 15,
+          "shareFirst": 0.2222222222222222,
+          "shareLast": 0.35294117647058826,
+          "yardsFirst": 37,
+          "yardsLast": 92,
+          "snapsFirst": 0.895,
+          "snapsLast": 0.935,
+          "attemptsFirst": 0,
+          "attemptsLast": 0,
+          "ypaFirst": null,
+          "ypaLast": null,
+          "siteScore": 73.1
+        },
+        {
+          "player": "Rome Odunze",
+          "position": "WR",
+          "team": "CHI",
+          "targetsFirst": 3.5,
+          "targetsLast": 6.5,
+          "shareFirst": 0.125,
+          "shareLast": 0.2,
+          "yardsFirst": 47.5,
+          "yardsLast": 69,
+          "snapsFirst": 0.6599999999999999,
+          "snapsLast": 0.87,
+          "attemptsFirst": 0,
+          "attemptsLast": 0,
+          "ypaFirst": null,
+          "ypaLast": null,
+          "siteScore": 71.4
+        },
+        {
+          "player": "Tetairoa McMillan",
+          "position": "WR",
+          "team": "CAR",
+          "targetsFirst": 9,
+          "targetsLast": 10.5,
+          "shareFirst": 0.2727272727272727,
+          "shareLast": 0.25925925925925924,
+          "yardsFirst": 88,
+          "yardsLast": 104.5,
+          "snapsFirst": 0.81,
+          "snapsLast": 0.9199999999999999,
+          "attemptsFirst": 0,
+          "attemptsLast": 0,
+          "ypaFirst": null,
+          "ypaLast": null,
+          "siteScore": 99.7
+        },
+        {
+          "player": "Drake Maye",
+          "position": "QB",
+          "team": "NE",
+          "targetsFirst": 0,
+          "targetsLast": 0,
+          "shareFirst": 0,
+          "shareLast": 0,
+          "yardsFirst": 193,
+          "yardsLast": 234,
+          "snapsFirst": 1,
+          "snapsLast": 0.905,
+          "attemptsFirst": 27.5,
+          "attemptsLast": 31,
+          "ypaFirst": 7.0181818181818185,
+          "ypaLast": 7.548387096774194,
+          "siteScore": 83.6
+        },
+        {
+          "player": "Colston Loveland",
+          "position": "TE",
+          "team": "CHI",
+          "targetsFirst": 2.5,
+          "targetsLast": 6.5,
+          "shareFirst": 0.08928571428571429,
+          "shareLast": 0.2,
+          "yardsFirst": 1.5,
+          "yardsLast": 44,
+          "snapsFirst": 0.865,
+          "snapsLast": 0.855,
+          "attemptsFirst": 0,
+          "attemptsLast": 0,
+          "ypaFirst": null,
+          "ypaLast": null,
+          "siteScore": 98.9
+        },
+        {
+          "player": "Tyler Shough",
+          "position": "QB",
+          "team": "NO",
+          "targetsFirst": 0,
+          "targetsLast": 0,
+          "shareFirst": 0,
+          "shareLast": 0,
+          "yardsFirst": 331,
+          "yardsLast": 270.5,
+          "snapsFirst": 1,
+          "snapsLast": 1,
+          "attemptsFirst": 45,
+          "attemptsLast": 45,
+          "ypaFirst": 7.355555555555555,
+          "ypaLast": 6.011111111111111,
+          "siteScore": 55.3
+        },
+        {
+          "player": "Bo Nix",
+          "position": "QB",
+          "team": "DEN",
+          "targetsFirst": 0,
+          "targetsLast": 0,
+          "shareFirst": 0,
+          "shareLast": 0,
+          "yardsFirst": 209.5,
+          "yardsLast": 200,
+          "snapsFirst": 1,
+          "snapsLast": 0.99,
+          "attemptsFirst": 29.5,
+          "attemptsLast": 38,
+          "ypaFirst": 7.101694915254237,
+          "ypaLast": 5.2631578947368425,
+          "siteScore": 75.3
+        }
+      ],
+      "source": {
+        "label": "nflverse player-week data; official team logs corroboration",
+        "filters": [
+          "Research checked October 6, 2026; NFL weeks 1\u20134 of 2026"
+        ],
+        "links": [
+          {
+            "label": "nflverse weekly data",
+            "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Reviewed evidence",
+            "definition": "First = Weeks 1\u20132, Last = Weeks 3\u20134. Per-game means; target share=sum targets/sum team targets; passing YPA=sum yards/sum attempts. Not a return prediction.",
+            "componentIds": [
+              "usage-analysis",
+              "qb-analysis",
+              "ranking",
+              "usage-table",
+              "qb-table",
+              "execution",
+              "methods"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Evidence preparation",
+            "detail": "Read dated research notes and run work/analyze_card_research.py; preserve missing values and original card identity. See attached research notes for records and exclusions."
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "For each selected player, sort 2026 weeks 1\u20134; compare first2/last2 per-game means. Target shares=sum(targets)/sum(teamTargets), YPA=sum(passingYards)/sum(attempts). Team targets include players in the nflverse team-game snapshot. Reconcile player logs to primary team pages. Source snapshot October6,2026."
+        }
+      ]
+    },
+    "weekly": {
+      "rows": [
+        {
+          "player": "Michael Wilson",
+          "position": "WR",
+          "week": 1,
+          "targets": 7,
+          "targetShare": 0.1891891891891892,
+          "attempts": 0,
+          "yards": 56,
+          "snapShare": 0.85,
+          "teamTargets": 37
+        },
+        {
+          "player": "Michael Wilson",
+          "position": "WR",
+          "week": 2,
+          "targets": 7,
+          "targetShare": 0.2692307692307692,
+          "attempts": 0,
+          "yards": 18,
+          "snapShare": 0.94,
+          "teamTargets": 26
+        },
+        {
+          "player": "Michael Wilson",
+          "position": "WR",
+          "week": 3,
+          "targets": 17,
+          "targetShare": 0.34,
+          "attempts": 0,
+          "yards": 89,
+          "snapShare": 0.93,
+          "teamTargets": 50
+        },
+        {
+          "player": "Michael Wilson",
+          "position": "WR",
+          "week": 4,
+          "targets": 13,
+          "targetShare": 0.37142857142857144,
+          "attempts": 0,
+          "yards": 95,
+          "snapShare": 0.94,
+          "teamTargets": 35
+        },
+        {
+          "player": "Rome Odunze",
+          "position": "WR",
+          "week": 1,
+          "targets": 3,
+          "targetShare": 0.11538461538461539,
+          "attempts": 0,
+          "yards": 52,
+          "snapShare": 0.48,
+          "teamTargets": 26
+        },
+        {
+          "player": "Rome Odunze",
+          "position": "WR",
+          "week": 2,
+          "targets": 4,
+          "targetShare": 0.13333333333333333,
+          "attempts": 0,
+          "yards": 43,
+          "snapShare": 0.84,
+          "teamTargets": 30
+        },
+        {
+          "player": "Rome Odunze",
+          "position": "WR",
+          "week": 3,
+          "targets": 6,
+          "targetShare": 0.17647058823529413,
+          "attempts": 0,
+          "yards": 44,
+          "snapShare": 0.85,
+          "teamTargets": 34
+        },
+        {
+          "player": "Rome Odunze",
+          "position": "WR",
+          "week": 4,
+          "targets": 7,
+          "targetShare": 0.22580645161290322,
+          "attempts": 0,
+          "yards": 94,
+          "snapShare": 0.89,
+          "teamTargets": 31
+        },
+        {
+          "player": "Tetairoa McMillan",
+          "position": "WR",
+          "week": 1,
+          "targets": 8,
+          "targetShare": 0.23529411764705882,
+          "attempts": 0,
+          "yards": 75,
+          "snapShare": 0.82,
+          "teamTargets": 34
+        },
+        {
+          "player": "Tetairoa McMillan",
+          "position": "WR",
+          "week": 2,
+          "targets": 10,
+          "targetShare": 0.3125,
+          "attempts": 0,
+          "yards": 101,
+          "snapShare": 0.8,
+          "teamTargets": 32
+        },
+        {
+          "player": "Tetairoa McMillan",
+          "position": "WR",
+          "week": 3,
+          "targets": 5,
+          "targetShare": 0.11904761904761904,
+          "attempts": 0,
+          "yards": 17,
+          "snapShare": 0.95,
+          "teamTargets": 42
+        },
+        {
+          "player": "Tetairoa McMillan",
+          "position": "WR",
+          "week": 4,
+          "targets": 16,
+          "targetShare": 0.41025641025641024,
+          "attempts": 0,
+          "yards": 192,
+          "snapShare": 0.89,
+          "teamTargets": 39
+        },
+        {
+          "player": "Drake Maye",
+          "position": "QB",
+          "week": 1,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 33,
+          "yards": 178,
+          "snapShare": 1,
+          "teamTargets": 31
+        },
+        {
+          "player": "Drake Maye",
+          "position": "QB",
+          "week": 2,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 22,
+          "yards": 208,
+          "snapShare": 1,
+          "teamTargets": 21
+        },
+        {
+          "player": "Drake Maye",
+          "position": "QB",
+          "week": 3,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 25,
+          "yards": 199,
+          "snapShare": 0.81,
+          "teamTargets": 30
+        },
+        {
+          "player": "Drake Maye",
+          "position": "QB",
+          "week": 4,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 37,
+          "yards": 269,
+          "snapShare": 1,
+          "teamTargets": 36
+        },
+        {
+          "player": "Colston Loveland",
+          "position": "TE",
+          "week": 1,
+          "targets": 2,
+          "targetShare": 0.07692307692307693,
+          "attempts": 0,
+          "yards": 0,
+          "snapShare": 0.87,
+          "teamTargets": 26
+        },
+        {
+          "player": "Colston Loveland",
+          "position": "TE",
+          "week": 2,
+          "targets": 3,
+          "targetShare": 0.1,
+          "attempts": 0,
+          "yards": 3,
+          "snapShare": 0.86,
+          "teamTargets": 30
+        },
+        {
+          "player": "Colston Loveland",
+          "position": "TE",
+          "week": 3,
+          "targets": 4,
+          "targetShare": 0.11764705882352941,
+          "attempts": 0,
+          "yards": 31,
+          "snapShare": 0.79,
+          "teamTargets": 34
+        },
+        {
+          "player": "Colston Loveland",
+          "position": "TE",
+          "week": 4,
+          "targets": 9,
+          "targetShare": 0.2903225806451613,
+          "attempts": 0,
+          "yards": 57,
+          "snapShare": 0.92,
+          "teamTargets": 31
+        },
+        {
+          "player": "Tyler Shough",
+          "position": "QB",
+          "week": 1,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 56,
+          "yards": 410,
+          "snapShare": 1,
+          "teamTargets": 52
+        },
+        {
+          "player": "Tyler Shough",
+          "position": "QB",
+          "week": 2,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 34,
+          "yards": 252,
+          "snapShare": 1,
+          "teamTargets": 32
+        },
+        {
+          "player": "Tyler Shough",
+          "position": "QB",
+          "week": 3,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 42,
+          "yards": 255,
+          "snapShare": 1,
+          "teamTargets": 40
+        },
+        {
+          "player": "Tyler Shough",
+          "position": "QB",
+          "week": 4,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 48,
+          "yards": 286,
+          "snapShare": 1,
+          "teamTargets": 47
+        },
+        {
+          "player": "Bo Nix",
+          "position": "QB",
+          "week": 1,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 28,
+          "yards": 131,
+          "snapShare": 1,
+          "teamTargets": 27
+        },
+        {
+          "player": "Bo Nix",
+          "position": "QB",
+          "week": 2,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 31,
+          "yards": 288,
+          "snapShare": 1,
+          "teamTargets": 29
+        },
+        {
+          "player": "Bo Nix",
+          "position": "QB",
+          "week": 3,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 34,
+          "yards": 186,
+          "snapShare": 1,
+          "teamTargets": 31
+        },
+        {
+          "player": "Bo Nix",
+          "position": "QB",
+          "week": 4,
+          "targets": 0,
+          "targetShare": 0,
+          "attempts": 42,
+          "yards": 214,
+          "snapShare": 0.98,
+          "teamTargets": 38
+        }
+      ],
+      "source": {
+        "label": "nflverse 2026 player-week records",
+        "filters": [
+          "Research checked October 6, 2026; NFL weeks 1\u20134 of 2026"
+        ],
+        "links": [
+          {
+            "label": "nflverse",
+            "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Reviewed evidence",
+            "definition": "Four completed games per named player. Targets count; snap share fraction; yards receiving for WR/TE and passing for QB.",
+            "componentIds": [
+              "usage-chart",
+              "usage-analysis"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Evidence preparation",
+            "detail": "Read dated research notes and run work/analyze_card_research.py; preserve missing values and original card identity. See attached research notes for records and exclusions."
+          }
+        ]
+      }
+    },
+    "gem": {
+      "rows": [
+        {
+          "player": "Tyler Shough",
+          "year": 2025,
+          "set": "Panini Donruss Downtown",
+          "parallel": "Base",
+          "cardNumber": "19",
+          "gems": 1163,
+          "total": 1655,
+          "gemFraction": 0.7027190332326284,
+          "exportRoundedRate": "70%",
+          "snapshotDate": null,
+          "denominatorVerified": false,
+          "source": "User-supplied GemRate CSV; snapshot date and exact denominator scope not supplied",
+          "certificate": "https://www.psacard.com/cert/159087402/psa"
+        },
+        {
+          "player": "Tyler Shough",
+          "year": 2025,
+          "set": "Panini Donruss Optic",
+          "parallel": "Purple Shock",
+          "cardNumber": "223",
+          "gems": 196,
+          "total": 416,
+          "gemFraction": 0.47115384615384615,
+          "exportRoundedRate": "47%",
+          "snapshotDate": null,
+          "denominatorVerified": false,
+          "source": "User-supplied GemRate CSV; snapshot date and exact denominator scope not supplied",
+          "certificate": "https://www.psacard.com/cert/171535853/psa"
+        },
+        {
+          "player": "Tyler Shough",
+          "year": 2025,
+          "set": "Panini Donruss Optic",
+          "parallel": "Base",
+          "cardNumber": "223",
+          "gems": 92,
+          "total": 224,
+          "gemFraction": 0.4107142857142857,
+          "exportRoundedRate": "41%",
+          "snapshotDate": null,
+          "denominatorVerified": false,
+          "source": "User-supplied GemRate CSV; snapshot date and exact denominator scope not supplied",
+          "certificate": "https://www.psacard.com/cert/159552020/psa"
+        },
+        {
+          "player": "Tyler Shough",
+          "year": 2025,
+          "set": "Panini Donruss Optic",
+          "parallel": "Holo",
+          "cardNumber": "223",
+          "gems": 80,
+          "total": 270,
+          "gemFraction": 0.2962962962962963,
+          "exportRoundedRate": "30%",
+          "snapshotDate": null,
+          "denominatorVerified": false,
+          "source": "User-supplied GemRate CSV; snapshot date and exact denominator scope not supplied",
+          "certificate": "https://www.psacard.com/cert/159274546/psa"
+        },
+        {
+          "player": "Tyler Shough",
+          "year": 2025,
+          "set": "Panini Prizm",
+          "parallel": "Silver Prizm",
+          "cardNumber": "429",
+          "gems": 53,
+          "total": 193,
+          "gemFraction": 0.27461139896373055,
+          "exportRoundedRate": "27%",
+          "snapshotDate": null,
+          "denominatorVerified": false,
+          "source": "User-supplied GemRate CSV; snapshot date and exact denominator scope not supplied",
+          "certificate": "https://www.psacard.com/cert/154317463/psa"
+        },
+        {
+          "player": "Tyler Shough",
+          "year": 2025,
+          "set": "Panini Prizm",
+          "parallel": "Silver Prizm",
+          "cardNumber": "327",
+          "gems": 27,
+          "total": 152,
+          "gemFraction": 0.17763157894736842,
+          "exportRoundedRate": "18%",
+          "snapshotDate": null,
+          "denominatorVerified": false,
+          "source": "User-supplied GemRate CSV; snapshot date and exact denominator scope not supplied",
+          "certificate": "https://www.psacard.com/cert/157691817/psa"
+        }
+      ],
+      "source": {
+        "label": "User-supplied tylershoughgemrate.csv; undated export",
+        "filters": [
+          "Research checked October 6, 2026; NFL weeks 1\u20134 of 2026"
+        ],
+        "links": [
+          {
+            "label": "GemRate FAQ",
+            "url": "https://www.gemrate.com/faq"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Reviewed evidence",
+            "definition": "PSA Gems/Total as labeled by provider. Not random-raw grading probability. Exact denominator scope/date not supplied.",
+            "componentIds": [
+              "gem-analysis",
+              "gem-table",
+              "methods"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Evidence preparation",
+            "detail": "Read dated research notes and run work/analyze_card_research.py; preserve missing values and original card identity. See attached research notes for records and exclusions."
+          }
+        ],
+        "files": [
+          "User supplied tylershoughgemrate.csv, 1,877 issue rows, no export date"
+        ]
+      }
+    },
+    "market": {
+      "rows": [
+        {
+          "player": "Michael Wilson",
+          "issue": "2023 #303",
+          "raw": 2.84,
+          "rawSample": "Sep 4\u201323 / n=8",
+          "psa10": null,
+          "psa10Sample": "No current sample; last visible Aug 2025",
+          "gemFraction": null,
+          "gemStatus": "Unavailable"
+        },
+        {
+          "player": "Rome Odunze",
+          "issue": "2024 #385",
+          "raw": 5.755,
+          "rawSample": "Sep 11\u201319 / n=10",
+          "psa10": 95,
+          "psa10Sample": "Sep 12\u2013Oct 5 / n=4; latest $85",
+          "gemFraction": null,
+          "gemStatus": "Current denominator unavailable; PSA10 count 323"
+        },
+        {
+          "player": "Drake Maye",
+          "issue": "2024 #329",
+          "raw": 110.5,
+          "rawSample": "Sep 21\u2013Oct 5 / n=10",
+          "psa10": 934.975,
+          "psa10Sample": "Oct 4\u20135 / n=4",
+          "gemFraction": 0.2184159378036929,
+          "gemStatus": "Older undated secondary census: 899 / 4,116; current PSA10 count 1,057"
+        },
+        {
+          "player": "Bo Nix",
+          "issue": "2024 #309",
+          "raw": 68.995,
+          "rawSample": "Sep 26\u2013Oct 3 / n=10",
+          "psa10": 680,
+          "psa10Sample": "Oct 2\u20135 / n=4; latest $616",
+          "gemFraction": 0.23422487665541417,
+          "gemStatus": "Older undated secondary census: 902 / 3,851; current PSA10 count 993"
+        },
+        {
+          "player": "Tyler Shough",
+          "issue": "2025 #327",
+          "raw": 40,
+          "rawSample": "Sep 26 single Clector sale; not a median",
+          "psa10": 750,
+          "psa10Sample": "Sep 13\u201327 / n=5",
+          "gemFraction": 0.17763157894736842,
+          "gemStatus": "Undated supplied CSV: 27 / 152; live PSA10 count now 29"
+        },
+        {
+          "player": "Tetairoa McMillan",
+          "issue": "2025 #311",
+          "raw": 9.99,
+          "rawSample": "Oct 5 single Clector sale; not a median",
+          "psa10": 124.13,
+          "psa10Sample": "HISTORICAL May\u2013Jul / n=2",
+          "gemFraction": null,
+          "gemStatus": "Unavailable"
+        },
+        {
+          "player": "Colston Loveland",
+          "issue": "2025 #319",
+          "raw": 9.5,
+          "rawSample": "Sep 15\u201330 / n=10",
+          "psa10": 227.5,
+          "psa10Sample": "HISTORICAL Apr\u2013Aug / n=3",
+          "gemFraction": null,
+          "gemStatus": "Unavailable"
+        }
+      ],
+      "source": {
+        "label": "Exact-card sold samples; primary PSA certificate pages and secondary SportsCardsPro/Clector",
+        "filters": [
+          "Research checked October 6, 2026; NFL weeks 1\u20134 of 2026"
+        ],
+        "links": [
+          {
+            "label": "Maye PSA",
+            "url": "https://www.psacard.com/cert/130019997/psa"
+          },
+          {
+            "label": "Odunze PSA",
+            "url": "https://www.psacard.com/cert/109953521/psa"
+          },
+          {
+            "label": "Nix PSA",
+            "url": "https://www.psacard.com/cert/116434259/psa"
+          },
+          {
+            "label": "Shough PSA",
+            "url": "https://www.psacard.com/cert/157691817/psa"
+          },
+          {
+            "label": "Raw records: Maye",
+            "url": "https://www.sportscardspro.com/game/football-cards-2024-panini-prizm/drake-maye-silver-329"
+          },
+          {
+            "label": "Raw records: Wilson",
+            "url": "https://www.sportscardspro.com/game/football-cards-2023-panini-prizm/michael-wilson-silver-303"
+          },
+          {
+            "label": "Raw records: Odunze",
+            "url": "https://www.sportscardspro.com/game/football-cards-2024-panini-prizm/rome-odunze-silver-385"
+          },
+          {
+            "label": "Raw records: Maye",
+            "url": "https://www.sportscardspro.com/game/football-cards-2024-panini-prizm/drake-maye-silver-329"
+          },
+          {
+            "label": "Raw records: Wilson",
+            "url": "https://www.sportscardspro.com/game/football-cards-2023-panini-prizm/michael-wilson-silver-303"
+          },
+          {
+            "label": "Raw records: Odunze",
+            "url": "https://www.sportscardspro.com/game/football-cards-2024-panini-prizm/rome-odunze-silver-385"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Reviewed evidence",
+            "definition": "USD card-only sold medians from small convenience samples; not asks, landed prices or guaranteed exits. Missing/stale data retained.",
+            "componentIds": [
+              "price-table",
+              "market-analysis",
+              "recommendations",
+              "ranking",
+              "execution",
+              "methods",
+              "qb-analysis",
+              "gem-analysis",
+              "grading-model"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Evidence preparation",
+            "detail": "Read dated research notes and run work/analyze_card_research.py; preserve missing values and original card identity. See attached research notes for records and exclusions."
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Read work/card-market-research.md, then October 6 visible native PSA cert records saved in work/psa-*-source.txt. Median exact-issue eBay sold rows only; exclude Fanatics from paired comparisons, ambiguous accepted offers in secondary tables, Silver Lazer, lots and wrong card numbers. New Rome sale 85 updates median to95; new Nix616 leaves median680."
+        }
+      ]
+    },
+    "model": {
+      "rows": [
+        {
+          "player": "Rome Odunze",
+          "case": "Downside",
+          "itemEntry": 48,
+          "allInEntry": 58.32000000000001,
+          "itemExit": 60,
+          "netProceeds": 49.1554,
+          "profit": -9.164600000000007,
+          "roi": -0.15714334705075456
+        },
+        {
+          "player": "Rome Odunze",
+          "case": "Reference",
+          "itemEntry": 48,
+          "allInEntry": 58.32000000000001,
+          "itemExit": 85,
+          "netProceeds": 70.5779,
+          "profit": 12.257899999999992,
+          "roi": 0.21018347050754443
+        },
+        {
+          "player": "Rome Odunze",
+          "case": "Upside",
+          "itemEntry": 48,
+          "allInEntry": 58.32000000000001,
+          "itemExit": 110,
+          "netProceeds": 92.0004,
+          "profit": 33.68039999999999,
+          "roi": 0.5775102880658434
+        },
+        {
+          "player": "Drake Maye",
+          "case": "Downside",
+          "itemEntry": 600,
+          "allInEntry": 654.48,
+          "itemExit": 600,
+          "netProceeds": 511.8814,
+          "profit": -142.59860000000003,
+          "roi": -0.2178807602982521
+        },
+        {
+          "player": "Drake Maye",
+          "case": "Reference",
+          "itemEntry": 600,
+          "allInEntry": 654.48,
+          "itemExit": 934.975,
+          "netProceeds": 798.9214775,
+          "profit": 144.44147750000002,
+          "roi": 0.2206965491688058
+        },
+        {
+          "player": "Drake Maye",
+          "case": "Upside",
+          "itemEntry": 600,
+          "allInEntry": 654.48,
+          "itemExit": 1200,
+          "netProceeds": 1026.0214,
+          "profit": 371.54140000000007,
+          "roi": 0.5676894633907836
+        },
+        {
+          "player": "Michael Wilson",
+          "case": "Downside",
+          "itemEntry": 0.99,
+          "allInEntry": 2.1492,
+          "itemExit": 1,
+          "netProceeds": 0.16379999999999995,
+          "profit": -1.9854,
+          "roi": -0.923785594639866
+        },
+        {
+          "player": "Michael Wilson",
+          "case": "Reference",
+          "itemEntry": 0.99,
+          "allInEntry": 2.1492,
+          "itemExit": 2.84,
+          "netProceeds": 1.7404959999999996,
+          "profit": -0.4087040000000004,
+          "roi": -0.19016564302996483
+        },
+        {
+          "player": "Michael Wilson",
+          "case": "Upside",
+          "itemEntry": 0.99,
+          "allInEntry": 2.1492,
+          "itemExit": 8,
+          "netProceeds": 6.1621,
+          "profit": 4.0129,
+          "roi": 1.8671598734412806
+        }
+      ],
+      "source": {
+        "label": "Illustrative profit scenarios with official fee inputs",
+        "filters": [
+          "Research checked October 6, 2026; NFL weeks 1\u20134 of 2026"
+        ],
+        "links": [
+          {
+            "label": "PSA pricing",
+            "url": "https://www.psacard.com/services/tradingcardgrading"
+          },
+          {
+            "label": "eBay fees",
+            "url": "https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Illustrative trade profit",
+            "definition": "All-in entry=(item+inbound postage)*1.08. Slab net proceeds=.8569*exit item-2.2586. Raw net uses $1 pass-through shipping, $0.25 packaging, $0.30/$0.40 per-order fee. No probability weights, ads, returns, income tax or capital opportunity cost.",
+            "componentIds": [
+              "cost-analysis",
+              "profit-table",
+              "recommendations",
+              "ranking",
+              "execution",
+              "grading-model"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Evidence preparation",
+            "detail": "Read dated research notes and run work/analyze_card_research.py; preserve missing values and original card identity. See attached research notes for records and exclusions."
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "Python",
+          "code": "cost=(entry+shipping)*1.08; net_slab=0.8569*exit-2.2586; profit=net_slab-cost; roi=profit/cost. Uses 13.25% fee on tax-inclusive checkout, 0.40 order fee, buyer-paid6 shipping, actual6 postage, 1 packaging."
+        }
+      ]
+    },
+    "grading": {
+      "rows": [
+        {
+          "player": "Drake Maye",
+          "rawItem": 110.5,
+          "allInCost": 198.73000000000002,
+          "psa10Exit": 934.975,
+          "psa9Exit": 155,
+          "lowerExit": 55,
+          "breakEvenAll9": 0.10199449562837211,
+          "breakEvenLower": 0.20404347478932872,
+          "historicalRate": 0.2184159378036929,
+          "profitAtHistoricalLower": 10.837564036078675,
+          "profitAt20Percent": -3.0489845000000173,
+          "stressProfitAt20Percent": -67.1433907,
+          "stressBreakEvenLower": 0.3548586553509285
+        },
+        {
+          "player": "Bo Nix",
+          "rawItem": 69,
+          "allInCost": 153.91,
+          "psa10Exit": 680,
+          "psa9Exit": 85,
+          "lowerExit": 35,
+          "breakEvenAll9": 0.1634425832417224,
+          "breakEvenLower": 0.22829199539352685,
+          "historicalRate": 0.23422487665541417,
+          "profitAtHistoricalLower": 3.2791064398857372,
+          "profitAt20Percent": -15.637,
+          "stressProfitAt20Percent": -62.252359999999996,
+          "stressBreakEvenLower": 0.39476765959470456
+        },
+        {
+          "player": "Tyler Shough",
+          "rawItem": 40,
+          "allInCost": 122.59,
+          "psa10Exit": 750,
+          "psa9Exit": 100,
+          "lowerExit": 40,
+          "breakEvenAll9": 0.07030458629945154,
+          "breakEvenLower": 0.1488703959079486,
+          "historicalRate": 0.17763157894736842,
+          "profitAtHistoricalLower": 17.49827499999998,
+          "profitAt20Percent": 31.107200000000006,
+          "stressProfitAt20Percent": -20.30680000000001,
+          "stressBreakEvenLower": 0.2577999538893744
+        }
+      ],
+      "source": {
+        "label": "Illustrative profit scenarios with official fee inputs",
+        "filters": [
+          "Research checked October 6, 2026; NFL weeks 1\u20134 of 2026"
+        ],
+        "links": [
+          {
+            "label": "PSA pricing",
+            "url": "https://www.psacard.com/services/tradingcardgrading"
+          },
+          {
+            "label": "eBay fees",
+            "url": "https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Grading sensitivity",
+            "definition": "Expected profit = p10*net10 + (1-p10)*netFailure - all-in cost. Historical fractions used only as sensitivity markers. All misses assumed grade9 is optimistic; lower-grade salvage is hypothetical. No inferred grade probabilities.",
+            "componentIds": [
+              "grading-model",
+              "grade-thresholds",
+              "grading-calculator",
+              "methods"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Evidence preparation",
+            "detail": "Read dated research notes and run work/analyze_card_research.py; preserve missing values and original card identity. See attached research notes for records and exclusions."
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "Python",
+          "code": "cost=(raw+5)*1.08+59.99+12+2; net=lambda price:0.8569*price-2.2586; breakeven=(cost-net(failedExit))/(net(gemExit)-net(failedExit)); EV=p10*net(gemExit)+(1-p10)*net(failedExit)-cost. Slider applies hypothetical PSA10-only decline; failedExit held unchanged."
+        }
+      ]
+    },
+    "watchlist": {
+      "rows": [
+        {
+          "player": "Carnell Tate",
+          "week": 1,
+          "targets": 6.0,
+          "yards": 38.0,
+          "teamTargets": 28.0
+        },
+        {
+          "player": "Carnell Tate",
+          "week": 2,
+          "targets": 5.0,
+          "yards": 27.0,
+          "teamTargets": 17.0
+        },
+        {
+          "player": "Carnell Tate",
+          "week": 3,
+          "targets": 9.0,
+          "yards": 58.0,
+          "teamTargets": 35.0
+        },
+        {
+          "player": "Carnell Tate",
+          "week": 4,
+          "targets": 12.0,
+          "yards": 145.0,
+          "teamTargets": 28.0
+        },
+        {
+          "player": "Brenton Strange",
+          "week": 1,
+          "targets": 3.0,
+          "yards": 23.0,
+          "teamTargets": 21.0
+        },
+        {
+          "player": "Brenton Strange",
+          "week": 2,
+          "targets": 2.0,
+          "yards": 17.0,
+          "teamTargets": 28.0
+        },
+        {
+          "player": "Brenton Strange",
+          "week": 3,
+          "targets": 5.0,
+          "yards": 32.0,
+          "teamTargets": 27.0
+        },
+        {
+          "player": "Brenton Strange",
+          "week": 4,
+          "targets": 8.0,
+          "yards": 95.0,
+          "teamTargets": 23.0
+        },
+        {
+          "player": "Chris Olave",
+          "week": 1,
+          "targets": 13.0,
+          "yards": 182.0,
+          "teamTargets": 52.0
+        },
+        {
+          "player": "Chris Olave",
+          "week": 2,
+          "targets": 10.0,
+          "yards": 86.0,
+          "teamTargets": 32.0
+        },
+        {
+          "player": "Chris Olave",
+          "week": 3,
+          "targets": 13.0,
+          "yards": 107.0,
+          "teamTargets": 40.0
+        },
+        {
+          "player": "Chris Olave",
+          "week": 4,
+          "targets": 12.0,
+          "yards": 116.0,
+          "teamTargets": 47.0
+        }
+      ],
+      "source": {
+        "label": "nflverse 2026 player-week records",
+        "filters": [
+          "Research checked October 6, 2026; NFL weeks 1\u20134 of 2026"
+        ],
+        "links": [
+          {
+            "label": "nflverse",
+            "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Additional football watchlist",
+            "definition": "Actual four-week receiving targets, without matched card price or grading evidence; not investment-qualified.",
+            "componentIds": [
+              "qb-analysis"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Evidence preparation",
+            "detail": "Read dated research notes and run work/analyze_card_research.py; preserve missing values and original card identity. See attached research notes for records and exclusions."
+          }
+        ]
+      }
+    }
+  },
+  "id": "report:6b6a5512-7c69-4628-8cd2-18707ebbdc84"
+}
