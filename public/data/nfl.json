@@ -3,11 +3,11 @@
   "season": 2026,
   "week": 5,
   "completedWeek": 5,
-  "partialWeek": false,
-  "updatedAt": "2026-10-13T19:32:43.793145Z",
+  "partialWeek": true,
+  "updatedAt": "2026-10-16T23:01:22.721688Z",
   "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
   "coverage": {
-    "players": 946,
+    "players": 949,
     "games": 79,
     "positions": [
       "QB",
@@ -31398,7 +31398,7 @@
     {
       "id": "00-0039373",
       "name": "Audric Estim\u00e9",
-      "team": "MIN",
+      "team": "CLE",
       "position": "RB",
       "history": [],
       "latest": {
@@ -37211,7 +37211,7 @@
     {
       "id": "00-0039754",
       "name": "Devin Culp",
-      "team": "TB",
+      "team": "CLE",
       "position": "TE",
       "history": [],
       "latest": {
@@ -37427,7 +37427,7 @@
     {
       "id": "00-0040202",
       "name": "Devin Neal",
-      "team": "MIN",
+      "team": "WAS",
       "position": "RB",
       "history": [],
       "latest": {
@@ -40316,7 +40316,7 @@
     {
       "id": "00-0039466",
       "name": "Ian Wheeler",
-      "team": "BUF",
+      "team": "PHI",
       "position": "RB",
       "history": [],
       "latest": {
@@ -42124,6 +42124,47 @@
       }
     },
     {
+      "id": "00-0035100",
+      "name": "Jake Browning",
+      "team": "LAC",
+      "position": "QB",
+      "history": [],
+      "latest": {
+        "week": null,
+        "targets": null,
+        "receptions": null,
+        "yards": null,
+        "carries": null,
+        "touches": null,
+        "attempts": null,
+        "targetShare": null,
+        "snapShare": null,
+        "routes": null
+      },
+      "baseline": {
+        "games": 0,
+        "targets": null,
+        "carries": null,
+        "attempts": null,
+        "touches": null,
+        "targetShare": null
+      },
+      "score": 50,
+      "trend": 0,
+      "reasons": [
+        "No completed-game stats available for this rostered player; score is neutral."
+      ],
+      "components": [],
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+      "seasonToDate": {
+        "targets": null,
+        "carries": null,
+        "attempts": null,
+        "touches": null,
+        "targetShare": null
+      }
+    },
+    {
       "id": "00-0038998",
       "name": "Jake Haener",
       "team": "NYG",
@@ -43001,7 +43042,7 @@
     {
       "id": "00-0040692",
       "name": "Jarquez Hunter",
-      "team": "MIA",
+      "team": "NO",
       "position": "RB",
       "history": [],
       "latest": {
@@ -43657,7 +43698,7 @@
     {
       "id": "00-0037267",
       "name": "Jerome Ford",
-      "team": "MIN",
+      "team": "ARI",
       "position": "RB",
       "history": [],
       "latest": {
@@ -45520,6 +45561,47 @@
       "id": "00-0038590",
       "name": "Justin Shorter",
       "team": "LV",
+      "position": "WR",
+      "history": [],
+      "latest": {
+        "week": null,
+        "targets": null,
+        "receptions": null,
+        "yards": null,
+        "carries": null,
+        "touches": null,
+        "attempts": null,
+        "targetShare": null,
+        "snapShare": null,
+        "routes": null
+      },
+      "baseline": {
+        "games": 0,
+        "targets": null,
+        "carries": null,
+        "attempts": null,
+        "touches": null,
+        "targetShare": null
+      },
+      "score": 50,
+      "trend": 0,
+      "reasons": [
+        "No completed-game stats available for this rostered player; score is neutral."
+      ],
+      "components": [],
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+      "seasonToDate": {
+        "targets": null,
+        "carries": null,
+        "attempts": null,
+        "touches": null,
+        "targetShare": null
+      }
+    },
+    {
+      "id": "00-0034386",
+      "name": "Justin Watson",
+      "team": "KC",
       "position": "WR",
       "history": [],
       "latest": {
@@ -48131,6 +48213,47 @@
       }
     },
     {
+      "id": "00-0040461",
+      "name": "Luke Grimm",
+      "team": "LAC",
+      "position": "WR",
+      "history": [],
+      "latest": {
+        "week": null,
+        "targets": null,
+        "receptions": null,
+        "yards": null,
+        "carries": null,
+        "touches": null,
+        "attempts": null,
+        "targetShare": null,
+        "snapShare": null,
+        "routes": null
+      },
+      "baseline": {
+        "games": 0,
+        "targets": null,
+        "carries": null,
+        "attempts": null,
+        "touches": null,
+        "targetShare": null
+      },
+      "score": 50,
+      "trend": 0,
+      "reasons": [
+        "No completed-game stats available for this rostered player; score is neutral."
+      ],
+      "components": [],
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+      "seasonToDate": {
+        "targets": null,
+        "carries": null,
+        "attempts": null,
+        "touches": null,
+        "targetShare": null
+      }
+    },
+    {
       "id": "00-0039355",
       "name": "Luke McCaffrey",
       "team": "WAS",
@@ -48675,8 +48798,8 @@
           "teamTargets": 36.0,
           "targetShare": 0.0,
           "airYardsShare": 0.0,
-          "snapShare": null,
-          "snaps": null,
+          "snapShare": 0.27,
+          "snaps": 18.0,
           "routes": null,
           "routeShare": null,
           "redZoneOpportunities": null,
@@ -48696,8 +48819,8 @@
           "teamTargets": 29.0,
           "targetShare": 0.0,
           "airYardsShare": 0.0,
-          "snapShare": null,
-          "snaps": null,
+          "snapShare": 0.03,
+          "snaps": 2.0,
           "routes": null,
           "routeShare": null,
           "redZoneOpportunities": null,
@@ -48718,8 +48841,8 @@
         "teamTargets": 29.0,
         "targetShare": 0.0,
         "airYardsShare": 0.0,
-        "snapShare": null,
-        "snaps": null,
+        "snapShare": 0.03,
+        "snaps": 2.0,
         "routes": null,
         "routeShare": null,
         "redZoneOpportunities": null,
@@ -53773,7 +53896,7 @@
     {
       "id": "00-0038891",
       "name": "Shedrick Jackson",
-      "team": "BAL",
+      "team": "ARI",
       "position": "WR",
       "history": [],
       "latest": {
@@ -89527,6 +89650,76 @@
   ],
   "reports": [
     {
+      "id": "revision-2026-10-16-f8fd0639c965",
+      "date": "2026-10-16T23:01:22.721688Z",
+      "scheduledFor": "2026-10-16T21:15:00Z",
+      "kind": "revision",
+      "season": 2026,
+      "week": 5,
+      "status": "live",
+      "playerCount": 949,
+      "leaders": [
+        {
+          "id": "00-0039890",
+          "name": "Adonai Mitchell",
+          "score": 100.0
+        },
+        {
+          "id": "00-0040124",
+          "name": "Tetairoa McMillan",
+          "score": 99.7
+        },
+        {
+          "id": "00-0040782",
+          "name": "Isaiah Bond",
+          "score": 98.5
+        },
+        {
+          "id": "00-0038104",
+          "name": "Tyquan Thornton",
+          "score": 98.5
+        },
+        {
+          "id": "00-0039337",
+          "name": "Malik Nabers",
+          "score": 97.4
+        },
+        {
+          "id": "00-0031503",
+          "name": "Jameis Winston",
+          "score": 97.3
+        },
+        {
+          "id": "00-0039075",
+          "name": "Puka Nacua",
+          "score": 96.8
+        },
+        {
+          "id": "00-0041489",
+          "name": "Germie Bernard",
+          "score": 96.6
+        },
+        {
+          "id": "00-0039067",
+          "name": "Rashee Rice",
+          "score": 95.4
+        },
+        {
+          "id": "00-0035993",
+          "name": "Tyler Huntley",
+          "score": 94.0
+        }
+      ],
+      "sources": [
+        "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+        "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv.gz"
+      ]
+    },
+    {
       "id": "weekly-2026-10-13-2375af8a42e3",
       "date": "2026-10-13T19:32:43.793145Z",
       "scheduledFor": "2026-10-13T14:15:00Z",
@@ -90579,6 +90772,13 @@
   ],
   "jobs": [
     {
+      "id": "revision-2026-10-16",
+      "date": "2026-10-16T23:01:22.721688Z",
+      "scheduledFor": "2026-10-16T21:15:00Z",
+      "status": "live",
+      "message": "Published live NFL snapshot; 949 players."
+    },
+    {
       "id": "weekly-2026-10-13",
       "date": "2026-10-13T19:32:43.793145Z",
       "scheduledFor": "2026-10-13T14:15:00Z",
@@ -90689,72 +90889,72 @@
       "id": "nfl-schedule",
       "status": "live",
       "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-      "retrievedAt": "2026-10-13T19:32:43.793145Z",
-      "etag": "\"4b0572b25ae11925459b70e9a963ef76902f16d33a1b94f95626194a0331a696\"",
+      "retrievedAt": "2026-10-16T23:01:22.721688Z",
+      "etag": "\"3a494ebdccdfcdaa5f6c1dd74104bc49a6dff3a64cdf67c43f0cb6f626faaa94\"",
       "lastModified": null,
       "rows": 7548,
-      "hash": "343cba76462530acfdefc83f823414196b1880f2bc431f1b9f071eb1e972666c"
+      "hash": "60a0d94b7348fe1c41a57ddb7eb18189ea0ad55a1e0b5b665436df27964d3a73"
     },
     {
       "id": "nfl-weekly-stats",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz",
-      "retrievedAt": "2026-10-13T19:32:43.793145Z",
-      "etag": "\"0x8DF294B3E0680A2\"",
-      "lastModified": "Tue, 13 Oct 2026 16:58:44 GMT",
-      "rows": 5506,
-      "hash": "fae8bce9fa4c6dd47c8dfbf1db1e6497e634b051956fe8ce3d921535203741e2"
+      "retrievedAt": "2026-10-16T23:01:22.721688Z",
+      "etag": "\"0x8DF2B8DBC2E04B8\"",
+      "lastModified": "Fri, 16 Oct 2026 13:59:45 GMT",
+      "rows": 5575,
+      "hash": "982d86fa324694c6934d0d57e1de94261fefb1de745f5985bc2e0b725dd6febb"
     },
     {
       "id": "rosters",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv.gz",
-      "retrievedAt": "2026-10-13T19:32:43.793145Z",
-      "etag": "\"0x8DF293ADBCF178E\"",
-      "lastModified": "Tue, 13 Oct 2026 15:01:28 GMT",
-      "rows": 3035,
-      "hash": "3e04f1c929b327bd0104674c3937f0170a5a975bc2c5217f07a0be27bb690e78"
+      "retrievedAt": "2026-10-16T23:01:22.721688Z",
+      "etag": "\"0x8DF2B802727FB09\"",
+      "lastModified": "Fri, 16 Oct 2026 12:22:32 GMT",
+      "rows": 3043,
+      "hash": "91aec410464e65917cfff78e5c59c0055680f149734f420b8da32a14a98ca28e"
     },
     {
       "id": "snap_counts",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv.gz",
-      "retrievedAt": "2026-10-13T19:32:43.793145Z",
-      "etag": "\"0x8DF291957C72C5C\"",
-      "lastModified": "Tue, 13 Oct 2026 11:01:33 GMT",
-      "rows": 7370,
-      "hash": "e4d877bf670c5bc47a1ac863cc3a28a0f4b2f926872cc03666b27b31d6ea332b"
+      "retrievedAt": "2026-10-16T23:01:22.721688Z",
+      "etag": "\"0x8DF2B752E8FEA09\"",
+      "lastModified": "Fri, 16 Oct 2026 11:04:00 GMT",
+      "rows": 7463,
+      "hash": "f1b59a1eee9bedcbe433537e73926d3c7b19c4495b59123c255ed8ab52638bd4"
     },
     {
       "id": "injuries",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
-      "retrievedAt": "2026-10-13T19:32:43.793145Z",
-      "etag": "\"0x8DF293A4C95C1C0\"",
-      "lastModified": "Tue, 13 Oct 2026 14:57:27 GMT",
-      "rows": 1413,
+      "retrievedAt": "2026-10-16T23:01:22.721688Z",
+      "etag": "\"0x8DF2B7F581B791F\"",
+      "lastModified": "Fri, 16 Oct 2026 12:16:44 GMT",
+      "rows": 1767,
       "latestDate": null,
-      "latestWeek": 5,
-      "hash": "8dd06b0e55128af411713591a14c22d3fe7135dbdfab0731c597ea1cf16037f4"
+      "latestWeek": 6,
+      "hash": "50ed8d6bdc82640dbef76980c707b82d496adc9e1ae787b80735e65f1904ebe5"
     },
     {
       "id": "depth_charts",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv.gz",
-      "retrievedAt": "2026-10-13T19:32:43.793145Z",
-      "etag": "\"0x8DF293A6A1D0E8E\"",
-      "lastModified": "Tue, 13 Oct 2026 14:58:17 GMT",
-      "rows": 645475,
-      "latestDate": "2026-10-13T14:58:07Z",
+      "retrievedAt": "2026-10-16T23:01:22.721688Z",
+      "etag": "\"0x8DF2B7F67818D10\"",
+      "lastModified": "Fri, 16 Oct 2026 12:17:10 GMT",
+      "rows": 659277,
+      "latestDate": "2026-10-16T12:16:59Z",
       "latestWeek": 0,
-      "hash": "536a38b90a0f68f1934f20711c2fbf4ac9f7bab5433a6e77caf249f2e5837cbb"
+      "hash": "d49bdf0003aed4688f9ba7f42177cb1336c01223f9786a004a60d136ef81d140"
     }
   ],
   "nextRun": {
-    "at": "2026-10-16T21:15:00Z",
-    "local": "2026-10-16T16:15:00-05:00",
+    "at": "2026-10-17T14:15:00Z",
+    "local": "2026-10-17T09:15:00-05:00",
     "timeZone": "America/Chicago",
-    "kind": "revision"
+    "kind": "catchup-check"
   },
   "methodology": {
     "baseline": "Latest completed player game versus prior three available completed games.",
@@ -90762,6 +90962,6 @@
     "score": "50 + 50 \u00d7 weighted normalized usage change, clipped to 0\u2013100. WR/TE targets 55% (scale 6) and target share 45% (scale .20); RB carries 65% (scale 10), targets 35% (scale 5); QB attempts 80% (scale 15), carries 20% (scale 5). Each component change is clipped to \u00b11. Missing components are omitted and weights renormalized. No prior games means neutral 50. This is a transparent usage heuristic, not a calibrated investment forecast.",
     "catalysts": "No injury/depth catalyst is inferred automatically. Optional provider health is shown separately."
   },
-  "watermark": "2375af8a42e3026b7c37c7ed6b9f8906c76ecbf5af7403e1bd5e34c62e2cf35b",
-  "lastAttemptAt": "2026-10-13T19:32:43.793145Z"
+  "watermark": "f8fd0639c9653a4a19a2a6031fdc2ae4133551b9e87361e5c4d30d55f77ea0be",
+  "lastAttemptAt": "2026-10-16T23:01:22.721688Z"
 }
