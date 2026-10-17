@@ -4,7 +4,7 @@
   "week": 5,
   "completedWeek": 5,
   "partialWeek": true,
-  "updatedAt": "2026-10-16T23:01:22.721688Z",
+  "updatedAt": "2026-10-17T14:25:41.858047Z",
   "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
   "coverage": {
     "players": 949,
@@ -89650,6 +89650,76 @@
   ],
   "reports": [
     {
+      "id": "catchup-check-2026-10-17-964d4e439068",
+      "date": "2026-10-17T14:25:41.858047Z",
+      "scheduledFor": "2026-10-17T14:15:00Z",
+      "kind": "catchup-check",
+      "season": 2026,
+      "week": 5,
+      "status": "live",
+      "playerCount": 949,
+      "leaders": [
+        {
+          "id": "00-0039890",
+          "name": "Adonai Mitchell",
+          "score": 100.0
+        },
+        {
+          "id": "00-0040124",
+          "name": "Tetairoa McMillan",
+          "score": 99.7
+        },
+        {
+          "id": "00-0040782",
+          "name": "Isaiah Bond",
+          "score": 98.5
+        },
+        {
+          "id": "00-0038104",
+          "name": "Tyquan Thornton",
+          "score": 98.5
+        },
+        {
+          "id": "00-0039337",
+          "name": "Malik Nabers",
+          "score": 97.4
+        },
+        {
+          "id": "00-0031503",
+          "name": "Jameis Winston",
+          "score": 97.3
+        },
+        {
+          "id": "00-0039075",
+          "name": "Puka Nacua",
+          "score": 96.8
+        },
+        {
+          "id": "00-0041489",
+          "name": "Germie Bernard",
+          "score": 96.6
+        },
+        {
+          "id": "00-0039067",
+          "name": "Rashee Rice",
+          "score": 95.4
+        },
+        {
+          "id": "00-0035993",
+          "name": "Tyler Huntley",
+          "score": 94.0
+        }
+      ],
+      "sources": [
+        "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+        "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv.gz"
+      ]
+    },
+    {
       "id": "revision-2026-10-16-f8fd0639c965",
       "date": "2026-10-16T23:01:22.721688Z",
       "scheduledFor": "2026-10-16T21:15:00Z",
@@ -90772,6 +90842,13 @@
   ],
   "jobs": [
     {
+      "id": "catchup-check-2026-10-17",
+      "date": "2026-10-17T14:25:41.858047Z",
+      "scheduledFor": "2026-10-17T14:15:00Z",
+      "status": "live",
+      "message": "Published live NFL snapshot; 949 players."
+    },
+    {
       "id": "revision-2026-10-16",
       "date": "2026-10-16T23:01:22.721688Z",
       "scheduledFor": "2026-10-16T21:15:00Z",
@@ -90889,19 +90966,19 @@
       "id": "nfl-schedule",
       "status": "live",
       "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-      "retrievedAt": "2026-10-16T23:01:22.721688Z",
-      "etag": "\"3a494ebdccdfcdaa5f6c1dd74104bc49a6dff3a64cdf67c43f0cb6f626faaa94\"",
+      "retrievedAt": "2026-10-17T14:25:41.858047Z",
+      "etag": "\"c76736efe9fbd786fe8f84bd4f2e6124606fd33291743bd6db9feaa4d170b0aa\"",
       "lastModified": null,
       "rows": 7548,
-      "hash": "60a0d94b7348fe1c41a57ddb7eb18189ea0ad55a1e0b5b665436df27964d3a73"
+      "hash": "12f39ef4f11528fbf28038a2cd7c9d686d485d634cfd6bb4ad2577a877883cd1"
     },
     {
       "id": "nfl-weekly-stats",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz",
-      "retrievedAt": "2026-10-16T23:01:22.721688Z",
-      "etag": "\"0x8DF2B8DBC2E04B8\"",
-      "lastModified": "Fri, 16 Oct 2026 13:59:45 GMT",
+      "retrievedAt": "2026-10-17T14:25:41.858047Z",
+      "etag": "\"0x8DF2C4E6BB88BD0\"",
+      "lastModified": "Sat, 17 Oct 2026 12:59:03 GMT",
       "rows": 5575,
       "hash": "982d86fa324694c6934d0d57e1de94261fefb1de745f5985bc2e0b725dd6febb"
     },
@@ -90909,17 +90986,17 @@
       "id": "rosters",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv.gz",
-      "retrievedAt": "2026-10-16T23:01:22.721688Z",
-      "etag": "\"0x8DF2B802727FB09\"",
-      "lastModified": "Fri, 16 Oct 2026 12:22:32 GMT",
+      "retrievedAt": "2026-10-17T14:25:41.858047Z",
+      "etag": "\"0x8DF2C42BEB690F0\"",
+      "lastModified": "Sat, 17 Oct 2026 11:35:28 GMT",
       "rows": 3043,
-      "hash": "91aec410464e65917cfff78e5c59c0055680f149734f420b8da32a14a98ca28e"
+      "hash": "ff8c7820c72dcfcaacc60b53e839b21693195225ed6542a8c75813c7dae70d24"
     },
     {
       "id": "snap_counts",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv.gz",
-      "retrievedAt": "2026-10-16T23:01:22.721688Z",
+      "retrievedAt": "2026-10-17T14:25:41.858047Z",
       "etag": "\"0x8DF2B752E8FEA09\"",
       "lastModified": "Fri, 16 Oct 2026 11:04:00 GMT",
       "rows": 7463,
@@ -90929,32 +91006,32 @@
       "id": "injuries",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
-      "retrievedAt": "2026-10-16T23:01:22.721688Z",
-      "etag": "\"0x8DF2B7F581B791F\"",
-      "lastModified": "Fri, 16 Oct 2026 12:16:44 GMT",
-      "rows": 1767,
+      "retrievedAt": "2026-10-17T14:25:41.858047Z",
+      "etag": "\"0x8DF2C42787F5D6B\"",
+      "lastModified": "Sat, 17 Oct 2026 11:33:31 GMT",
+      "rows": 1787,
       "latestDate": null,
       "latestWeek": 6,
-      "hash": "50ed8d6bdc82640dbef76980c707b82d496adc9e1ae787b80735e65f1904ebe5"
+      "hash": "013d578f85ebba1c487b44ee8eeaeca84d6a958c15cd4a4ec19dbc78080a4e46"
     },
     {
       "id": "depth_charts",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv.gz",
-      "retrievedAt": "2026-10-16T23:01:22.721688Z",
-      "etag": "\"0x8DF2B7F67818D10\"",
-      "lastModified": "Fri, 16 Oct 2026 12:17:10 GMT",
-      "rows": 659277,
-      "latestDate": "2026-10-16T12:16:59Z",
+      "retrievedAt": "2026-10-17T14:25:41.858047Z",
+      "etag": "\"0x8DF2C4287D85D16\"",
+      "lastModified": "Sat, 17 Oct 2026 11:33:56 GMT",
+      "rows": 663879,
+      "latestDate": "2026-10-17T11:33:46Z",
       "latestWeek": 0,
-      "hash": "d49bdf0003aed4688f9ba7f42177cb1336c01223f9786a004a60d136ef81d140"
+      "hash": "3db837da813feeeea64c8efa7128b7e56ef9fae7a452b3111242363786863da9"
     }
   ],
   "nextRun": {
-    "at": "2026-10-17T14:15:00Z",
-    "local": "2026-10-17T09:15:00-05:00",
+    "at": "2026-10-20T14:15:00Z",
+    "local": "2026-10-20T09:15:00-05:00",
     "timeZone": "America/Chicago",
-    "kind": "catchup-check"
+    "kind": "weekly"
   },
   "methodology": {
     "baseline": "Latest completed player game versus prior three available completed games.",
@@ -90962,6 +91039,6 @@
     "score": "50 + 50 \u00d7 weighted normalized usage change, clipped to 0\u2013100. WR/TE targets 55% (scale 6) and target share 45% (scale .20); RB carries 65% (scale 10), targets 35% (scale 5); QB attempts 80% (scale 15), carries 20% (scale 5). Each component change is clipped to \u00b11. Missing components are omitted and weights renormalized. No prior games means neutral 50. This is a transparent usage heuristic, not a calibrated investment forecast.",
     "catalysts": "No injury/depth catalyst is inferred automatically. Optional provider health is shown separately."
   },
-  "watermark": "f8fd0639c9653a4a19a2a6031fdc2ae4133551b9e87361e5c4d30d55f77ea0be",
-  "lastAttemptAt": "2026-10-16T23:01:22.721688Z"
+  "watermark": "964d4e439068c1657e57f377ce6c1bddc3d2f60f0ea14bb4073026bbf4e716e5",
+  "lastAttemptAt": "2026-10-17T14:25:41.858047Z"
 }
