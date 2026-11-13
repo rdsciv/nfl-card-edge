@@ -3,8 +3,8 @@
   "season": 2026,
   "week": 9,
   "completedWeek": 9,
-  "partialWeek": false,
-  "updatedAt": "2026-11-10T20:36:46.884468Z",
+  "partialWeek": true,
+  "updatedAt": "2026-11-13T23:53:01.612012Z",
   "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
   "coverage": {
     "players": 958,
@@ -855,7 +855,7 @@
           "airYards": 86.0,
           "teamTargets": 34.0,
           "targetShare": 0.20588235294117646,
-          "airYardsShare": 0.3412698412698413,
+          "airYardsShare": 0.344,
           "snapShare": 0.58,
           "snaps": 36.0,
           "routes": null,
@@ -877,7 +877,7 @@
         "airYards": 86.0,
         "teamTargets": 34.0,
         "targetShare": 0.20588235294117646,
-        "airYardsShare": 0.3412698412698413,
+        "airYardsShare": 0.344,
         "snapShare": 0.58,
         "snaps": 36.0,
         "routes": null,
@@ -7168,7 +7168,7 @@
     },
     {
       "id": "00-0039373",
-      "name": "Audric Estim\u00e9",
+      "name": "Audric Estime",
       "team": "NO",
       "position": "RB",
       "history": [
@@ -10062,7 +10062,7 @@
           "airYards": -8.0,
           "teamTargets": 34.0,
           "targetShare": 0.08823529411764706,
-          "airYardsShare": -0.031746031746031744,
+          "airYardsShare": -0.032,
           "snapShare": 0.45,
           "snaps": 28.0,
           "routes": null,
@@ -10084,7 +10084,7 @@
         "airYards": -8.0,
         "teamTargets": 34.0,
         "targetShare": 0.08823529411764706,
-        "airYardsShare": -0.031746031746031744,
+        "airYardsShare": -0.032,
         "snapShare": 0.45,
         "snaps": 28.0,
         "routes": null,
@@ -24990,7 +24990,7 @@
           "airYards": 5.0,
           "teamTargets": 34.0,
           "targetShare": 0.029411764705882353,
-          "airYardsShare": 0.01984126984126984,
+          "airYardsShare": 0.02,
           "snapShare": 0.11,
           "snaps": 7.0,
           "routes": null,
@@ -25012,7 +25012,7 @@
         "airYards": 5.0,
         "teamTargets": 34.0,
         "targetShare": 0.029411764705882353,
-        "airYardsShare": 0.01984126984126984,
+        "airYardsShare": 0.02,
         "snapShare": 0.11,
         "snaps": 7.0,
         "routes": null,
@@ -25179,7 +25179,7 @@
           "team": "WAS",
           "targets": 0.0,
           "receptions": 0.0,
-          "yards": 273.0,
+          "yards": 274.0,
           "rushingYards": 16.0,
           "carries": 4.0,
           "attempts": 35.0,
@@ -25201,7 +25201,7 @@
         "team": "WAS",
         "targets": 0.0,
         "receptions": 0.0,
-        "yards": 273.0,
+        "yards": 274.0,
         "rushingYards": 16.0,
         "carries": 4.0,
         "attempts": 35.0,
@@ -26096,7 +26096,7 @@
           "airYards": 60.0,
           "teamTargets": 34.0,
           "targetShare": 0.17647058823529413,
-          "airYardsShare": 0.23809523809523808,
+          "airYardsShare": 0.24,
           "snapShare": 0.84,
           "snaps": 52.0,
           "routes": null,
@@ -26118,7 +26118,7 @@
         "airYards": 60.0,
         "teamTargets": 34.0,
         "targetShare": 0.17647058823529413,
-        "airYardsShare": 0.23809523809523808,
+        "airYardsShare": 0.24,
         "snapShare": 0.84,
         "snaps": 52.0,
         "routes": null,
@@ -27000,14 +27000,14 @@
           "team": "WAS",
           "targets": 7.0,
           "receptions": 6.0,
-          "yards": 56.0,
+          "yards": 57.0,
           "rushingYards": 0.0,
           "carries": 0.0,
           "attempts": 0.0,
           "airYards": 36.0,
           "teamTargets": 34.0,
           "targetShare": 0.20588235294117646,
-          "airYardsShare": 0.14285714285714285,
+          "airYardsShare": 0.144,
           "snapShare": 0.74,
           "snaps": 46.0,
           "routes": null,
@@ -27022,14 +27022,14 @@
         "team": "WAS",
         "targets": 7.0,
         "receptions": 6.0,
-        "yards": 56.0,
+        "yards": 57.0,
         "rushingYards": 0.0,
         "carries": 0.0,
         "attempts": 0.0,
         "airYards": 36.0,
         "teamTargets": 34.0,
         "targetShare": 0.20588235294117646,
-        "airYardsShare": 0.14285714285714285,
+        "airYardsShare": 0.144,
         "snapShare": 0.74,
         "snaps": 46.0,
         "routes": null,
@@ -30969,7 +30969,7 @@
           "airYards": 5.0,
           "teamTargets": 34.0,
           "targetShare": 0.029411764705882353,
-          "airYardsShare": 0.01984126984126984,
+          "airYardsShare": 0.02,
           "snapShare": 0.15,
           "snaps": 9.0,
           "routes": null,
@@ -30991,7 +30991,7 @@
         "airYards": 5.0,
         "teamTargets": 34.0,
         "targetShare": 0.029411764705882353,
-        "airYardsShare": 0.01984126984126984,
+        "airYardsShare": 0.02,
         "snapShare": 0.15,
         "snaps": 9.0,
         "routes": null,
@@ -47533,7 +47533,7 @@
     {
       "id": "00-0041139",
       "name": "Damon Bankston",
-      "team": "GB",
+      "team": "MIN",
       "position": "RB",
       "history": [],
       "latest": {
@@ -52993,12 +52993,12 @@
           "rushingYards": 0.0,
           "carries": 0.0,
           "attempts": 0.0,
-          "airYards": 12.0,
+          "airYards": 11.0,
           "teamTargets": 34.0,
           "targetShare": 0.029411764705882353,
-          "airYardsShare": 0.047619047619047616,
-          "snapShare": null,
-          "snaps": null,
+          "airYardsShare": 0.044,
+          "snapShare": 0.27,
+          "snaps": 17.0,
           "routes": null,
           "routeShare": null,
           "redZoneOpportunities": null,
@@ -53015,12 +53015,12 @@
         "rushingYards": 0.0,
         "carries": 0.0,
         "attempts": 0.0,
-        "airYards": 12.0,
+        "airYards": 11.0,
         "teamTargets": 34.0,
         "targetShare": 0.029411764705882353,
-        "airYardsShare": 0.047619047619047616,
-        "snapShare": null,
-        "snaps": null,
+        "airYardsShare": 0.044,
+        "snapShare": 0.27,
+        "snaps": 17.0,
         "routes": null,
         "routeShare": null,
         "redZoneOpportunities": null,
@@ -55388,7 +55388,7 @@
     {
       "id": "00-0041203",
       "name": "Joey Aguilar",
-      "team": "JAX",
+      "team": "ARI",
       "position": "QB",
       "history": [],
       "latest": {
@@ -55942,7 +55942,7 @@
     {
       "id": "00-0026300",
       "name": "Josh Johnson",
-      "team": "CIN",
+      "team": "ARI",
       "position": "QB",
       "history": [],
       "latest": {
@@ -58068,7 +58068,7 @@
     {
       "id": "00-0041252",
       "name": "Kenny Fletcher Jr.",
-      "team": "IND",
+      "team": "GB",
       "position": "TE",
       "history": [],
       "latest": {
@@ -60486,7 +60486,7 @@
     {
       "id": "00-0041001",
       "name": "Matt Lauter",
-      "team": "MIN",
+      "team": "NO",
       "position": "TE",
       "history": [],
       "latest": {
@@ -62751,7 +62751,7 @@
     {
       "id": "00-0032208",
       "name": "Phillip Dorsett",
-      "team": "LV",
+      "team": "ARI",
       "position": "WR",
       "history": [],
       "latest": {
@@ -67841,7 +67841,7 @@
     {
       "id": "00-0037340",
       "name": "Zaire Mitchell-Paden",
-      "team": "HOU",
+      "team": "CLE",
       "position": "TE",
       "history": [],
       "latest": {
@@ -78913,7 +78913,7 @@
           "airYards": -5.0,
           "teamTargets": 34.0,
           "targetShare": 0.08823529411764706,
-          "airYardsShare": -0.01984126984126984,
+          "airYardsShare": -0.02,
           "snapShare": 0.56,
           "snaps": 35.0,
           "routes": null,
@@ -78935,7 +78935,7 @@
         "airYards": -5.0,
         "teamTargets": 34.0,
         "targetShare": 0.08823529411764706,
-        "airYardsShare": -0.01984126984126984,
+        "airYardsShare": -0.02,
         "snapShare": 0.56,
         "snaps": 35.0,
         "routes": null,
@@ -103808,10 +103808,10 @@
           "rushingYards": 0.0,
           "carries": 0.0,
           "attempts": 0.0,
-          "airYards": 61.0,
+          "airYards": 60.0,
           "teamTargets": 34.0,
           "targetShare": 0.14705882352941177,
-          "airYardsShare": 0.24206349206349206,
+          "airYardsShare": 0.24,
           "snapShare": 0.61,
           "snaps": 38.0,
           "routes": null,
@@ -103830,10 +103830,10 @@
         "rushingYards": 0.0,
         "carries": 0.0,
         "attempts": 0.0,
-        "airYards": 61.0,
+        "airYards": 60.0,
         "teamTargets": 34.0,
         "targetShare": 0.14705882352941177,
-        "airYardsShare": 0.24206349206349206,
+        "airYardsShare": 0.24,
         "snapShare": 0.61,
         "snaps": 38.0,
         "routes": null,
@@ -118401,6 +118401,76 @@
   ],
   "reports": [
     {
+      "id": "revision-2026-11-13-071d93f6dd00",
+      "date": "2026-11-13T23:53:01.612012Z",
+      "scheduledFor": "2026-11-13T22:15:00Z",
+      "kind": "revision",
+      "season": 2026,
+      "week": 9,
+      "status": "live",
+      "playerCount": 958,
+      "leaders": [
+        {
+          "id": "00-0031610",
+          "name": "Darren Waller",
+          "score": 100.0
+        },
+        {
+          "id": "00-0041511",
+          "name": "Omar Cooper Jr.",
+          "score": 100.0
+        },
+        {
+          "id": "00-0040668",
+          "name": "Shedeur Sanders",
+          "score": 100.0
+        },
+        {
+          "id": "00-0038977",
+          "name": "Tank Dell",
+          "score": 100.0
+        },
+        {
+          "id": "00-0038104",
+          "name": "Tyquan Thornton",
+          "score": 98.5
+        },
+        {
+          "id": "00-0036415",
+          "name": "Van Jefferson",
+          "score": 96.5
+        },
+        {
+          "id": "00-0040584",
+          "name": "Gunnar Helm",
+          "score": 96.2
+        },
+        {
+          "id": "00-0038129",
+          "name": "Cade Otton",
+          "score": 95.7
+        },
+        {
+          "id": "00-0037740",
+          "name": "Garrett Wilson",
+          "score": 92.1
+        },
+        {
+          "id": "00-0039075",
+          "name": "Puka Nacua",
+          "score": 91.7
+        }
+      ],
+      "sources": [
+        "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+        "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
+        "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv.gz"
+      ]
+    },
+    {
       "id": "weekly-2026-11-10-7819bf19d308",
       "date": "2026-11-10T20:36:46.884468Z",
       "scheduledFor": "2026-11-10T15:15:00Z",
@@ -120293,6 +120363,13 @@
   ],
   "jobs": [
     {
+      "id": "revision-2026-11-13",
+      "date": "2026-11-13T23:53:01.612012Z",
+      "scheduledFor": "2026-11-13T22:15:00Z",
+      "status": "live",
+      "message": "Published live NFL snapshot; 958 players."
+    },
+    {
       "id": "weekly-2026-11-10",
       "date": "2026-11-10T20:36:46.884468Z",
       "scheduledFor": "2026-11-10T15:15:00Z",
@@ -120487,72 +120564,72 @@
       "id": "nfl-schedule",
       "status": "live",
       "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-      "retrievedAt": "2026-11-10T20:36:46.884468Z",
-      "etag": "\"30b7d45082b66707850fad9e818c458cb9a239d2478541806f02caa94bff5d81\"",
+      "retrievedAt": "2026-11-13T23:53:01.612012Z",
+      "etag": "\"ba5370a6d7fb289d618e8ea27d866e61744cab597c4f5ff1c7f8e608b8d65d2b\"",
       "lastModified": null,
       "rows": 7548,
-      "hash": "ea96bf62820c4c09902f7ef557b69991f425f07dbb7530fca9e870084fa1b5e5"
+      "hash": "43b3d408be8b375855b7327a3352a94b600a24ab4c42779c5de95d1d23f1095a"
     },
     {
       "id": "nfl-weekly-stats",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz",
-      "retrievedAt": "2026-11-10T20:36:46.884468Z",
-      "etag": "\"0x8DF3F4CA74E3D93\"",
-      "lastModified": "Tue, 10 Nov 2026 17:04:16 GMT",
-      "rows": 9464,
-      "hash": "edac7bfc5969a8ec553d8b0e3d9e479e924b8492fd048139f83c6e9e306887e6"
+      "retrievedAt": "2026-11-13T23:53:01.612012Z",
+      "etag": "\"0x8DF41A989EC3D6A\"",
+      "lastModified": "Fri, 13 Nov 2026 17:14:12 GMT",
+      "rows": 9534,
+      "hash": "a7f51400624ae41f38db1395122115ff653231789ed0a840a3a7fae9e3bc977a"
     },
     {
       "id": "rosters",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv.gz",
-      "retrievedAt": "2026-11-10T20:36:46.884468Z",
-      "etag": "\"0x8DF3F401C5EA379\"",
-      "lastModified": "Tue, 10 Nov 2026 15:34:29 GMT",
-      "rows": 3070,
-      "hash": "3ea4df63ac6772d590e0203b00b00ff403fe32df99e2e1fca7141d8c104ccc15"
+      "retrievedAt": "2026-11-13T23:53:01.612012Z",
+      "etag": "\"0x8DF4199B0F338DA\"",
+      "lastModified": "Fri, 13 Nov 2026 15:20:46 GMT",
+      "rows": 3073,
+      "hash": "4368a2bc1532c2f5cc424fbe1e7521b73cdde019a6e02d697cc05bf4818ecdc3"
     },
     {
       "id": "snap_counts",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv.gz",
-      "retrievedAt": "2026-11-10T20:36:46.884468Z",
-      "etag": "\"0x8DF3F2601160CCE\"",
-      "lastModified": "Tue, 10 Nov 2026 12:27:36 GMT",
-      "rows": 12693,
-      "hash": "354729bdea65e782b8e559354dcdcc55d4ece586dfbcd00adf263523092b12b7"
+      "retrievedAt": "2026-11-13T23:53:01.612012Z",
+      "etag": "\"0x8DF417DDD4C87F0\"",
+      "lastModified": "Fri, 13 Nov 2026 12:01:34 GMT",
+      "rows": 12785,
+      "hash": "ba54197d9e1e9a5473153f984f4880e736020c9e20565d1df246bf1e62714866"
     },
     {
       "id": "injuries",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
-      "retrievedAt": "2026-11-10T20:36:46.884468Z",
-      "etag": "\"0x8DF3F3FC57EE72D\"",
-      "lastModified": "Tue, 10 Nov 2026 15:32:03 GMT",
-      "rows": 2821,
+      "retrievedAt": "2026-11-13T23:53:01.612012Z",
+      "etag": "\"0x8DF419958D269A2\"",
+      "lastModified": "Fri, 13 Nov 2026 15:18:18 GMT",
+      "rows": 3121,
       "latestDate": null,
-      "latestWeek": 9,
-      "hash": "6d3450bf475100eb450dc6ed672fc5881946eaf9c5e225b52068c0aae38390c5"
+      "latestWeek": 10,
+      "hash": "40d98f1fa0a07159c9271ecb167611876e234f643e33ff55358d3d81adb34edb"
     },
     {
       "id": "depth_charts",
       "status": "live",
       "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv.gz",
-      "retrievedAt": "2026-11-10T20:36:46.884468Z",
-      "etag": "\"0x8DF3F3FD2395F82\"",
-      "lastModified": "Tue, 10 Nov 2026 15:32:25 GMT",
-      "rows": 773170,
-      "latestDate": "2026-11-10T15:32:14Z",
+      "retrievedAt": "2026-11-13T23:53:01.612012Z",
+      "etag": "\"0x8DF41994B4C9173\"",
+      "lastModified": "Fri, 13 Nov 2026 15:17:55 GMT",
+      "rows": 784796,
+      "latestDate": "2026-11-13T15:17:47Z",
       "latestWeek": 0,
-      "hash": "f7220eedfcf3d5232a32410d43fbbd44daa8c71c51eb7958d1cd36962d78430c"
+      "hash": "05d89724a278447eb47c072e22e8cc81aea3c68eafae89e77d7022ebac066a17"
     }
   ],
   "nextRun": {
-    "at": "2026-11-13T22:15:00Z",
-    "local": "2026-11-13T16:15:00-06:00",
+    "at": "2026-11-14T15:15:00Z",
+    "local": "2026-11-14T09:15:00-06:00",
     "timeZone": "America/Chicago",
-    "kind": "revision"
+    "kind": "catchup-check"
   },
   "methodology": {
     "baseline": "Latest completed player game versus prior three available completed games.",
@@ -120560,6 +120637,6 @@
     "score": "50 + 50 \u00d7 weighted normalized usage change, clipped to 0\u2013100. WR/TE targets 55% (scale 6) and target share 45% (scale .20); RB carries 65% (scale 10), targets 35% (scale 5); QB attempts 80% (scale 15), carries 20% (scale 5). Each component change is clipped to \u00b11. Missing components are omitted and weights renormalized. No prior games means neutral 50. This is a transparent usage heuristic, not a calibrated investment forecast.",
     "catalysts": "No injury/depth catalyst is inferred automatically. Optional provider health is shown separately."
   },
-  "watermark": "7819bf19d30811ff2c656f2e848f1b9a6e1c87a5be520ca62083c18c4f66d477",
-  "lastAttemptAt": "2026-11-10T20:36:46.884468Z"
+  "watermark": "071d93f6dd00c74e4a6e9e920fdd7ecf89767da960c46198e8741167a67f46eb",
+  "lastAttemptAt": "2026-11-13T23:53:01.612012Z"
 }
