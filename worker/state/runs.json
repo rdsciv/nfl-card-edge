@@ -221,6 +221,13 @@
       "message": "Published live NFL snapshot; 961 players.",
       "attempts": 1,
       "retryAfter": null
+    },
+    "catchup-check-2026-11-21": {
+      "status": "live",
+      "executedAt": "2026-11-21T16:57:12.391894Z",
+      "message": "Published live NFL snapshot; 961 players.",
+      "attempts": 1,
+      "retryAfter": null
     }
   }
 }
